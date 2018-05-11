@@ -52,7 +52,15 @@ for(int i = 0; i < minLength; i++)
            
               System.out.println("one delete away");
                return true;
-          }
+          }else if(count1 == count2){
+              for(int i=0; i<count1-1; i++)
+              {
+                  if(c1[i]!=c2[i]){
+                  System.out.println("one replace away");
+                  }
+              
+              }
+           }
         System.out.println("not running inside");
    return false;
     }

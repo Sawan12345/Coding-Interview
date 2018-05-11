@@ -27,7 +27,7 @@ public class CodingInterview {
 //        permutation.Permute(str, 0, str.length()-1);
     
         OneAway o= new OneAway();
-        o.oneEdit("pale", "pales");
+        o.oneEdit("pales", "pale");
     }
 }
 
