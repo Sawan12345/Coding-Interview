@@ -25,9 +25,10 @@ public class CodingInterview {
 //        String str = "tact coa";
 //        PermutationPalindrom permutation = new PermutationPalindrom();
 //        permutation.Permute(str, 0, str.length()-1);
-    
+  
+//ans 3
         OneAway o= new OneAway();
-        o.oneEdit("pales", "pale");
+        o.oneEdit("pale", "bale");
     }
 }
 
