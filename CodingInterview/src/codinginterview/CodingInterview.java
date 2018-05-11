@@ -17,12 +17,17 @@ public class CodingInterview {
    
 
     public static void main(String[] args) {
+//ans 1
 //      URLify ui= new URLify();
 //      System.out.print(ui.insertStr("KOmal Suthar 123"));
 
-        String str = "tact coa";
-        PermutationPalindrom permutation = new PermutationPalindrom();
-         permutation.Permute(str, 0, str.length()-1);
+//ans 2
+//        String str = "tact coa";
+//        PermutationPalindrom permutation = new PermutationPalindrom();
+//        permutation.Permute(str, 0, str.length()-1);
+    
+        OneAway o= new OneAway();
+        o.oneEdit("pale", "pales");
     }
 }
 
