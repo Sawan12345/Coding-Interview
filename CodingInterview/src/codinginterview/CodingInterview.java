@@ -27,8 +27,12 @@ public class CodingInterview {
 //        permutation.Permute(str, 0, str.length()-1);
   
 //ans 3
-        OneAway o= new OneAway();
-        o.oneEdit("pale", "bale");
+//        OneAway o= new OneAway();
+//        o.oneEdit("pale", "bale");
+
+//ans 4
+        StringCompression sc= new StringCompression();
+        sc.compresed("aaabbbaac");
     }
 }
 
