@@ -31,8 +31,22 @@ public class CodingInterview {
 //        o.oneEdit("pale", "bale");
 
 //ans 4
-        StringCompression sc= new StringCompression();
-        sc.compresed("aaabbbaac");
+//        StringCompression sc= new StringCompression();
+//        sc.compresed("aaabbbaac");
+
+    Rmatrix rm = new Rmatrix(); 
+   		int matrix[][] = new int[][] { {0,1, 2, 3},
+				{4,5,6,7}, {8,9,10,11},{12,13,14,15}};
+		rm.rotate(matrix);
+//		for(int i=0;i<matrix.length;i++){
+//			for(int j=0;j<matrix[0].length;j++){
+//				System.out.print(matrix[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
+
+
+             
     }
 }
 
