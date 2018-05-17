@@ -20,7 +20,7 @@ public class Rmatrix {
         //try with simple 2d matrix
     //simple swap
     
-    int level=0;
+   
     static void printMatrix(int arr[][]) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
@@ -47,20 +47,38 @@ public class Rmatrix {
     //14 10 6 2
     //15 11 7 3
     //level first
+    
+    //code ne jevu ko evu j kare
        public static void rotate(int [][] arr){
            int last = arr.length-1;
-//           int level=0;
+    int level=0;     
            for(int i=0; i<last; i++){
 
-               int temp = arr[0][i];
-               arr[0][i] = arr[i][last];
+               int temp = arr[level][i];
+               arr[level][i] = arr[i][last];
                arr[i][last] = arr[last][last-i];
-               arr[last][last-i]= arr[last-i][0];
-               arr[last-i][0]=temp;
+               arr[last][last-i]= arr[last-i][level];
+               arr[last-i][level]=temp;
+             
+            
+           }
+//           printMatrix(arr);
+       }
+  public static void rotateInner(int [][] arr){
+           int last = arr.length-2;
+           int level=0;     
+          rotate(arr);
+           for(int i=1; i<last; i++){
+
+               int temp = arr[i][i];
+               arr[i][i] = arr[i][last];
+               arr[i][last] = arr[last][last];
+               arr[last][last]= arr[last][i];
+               arr[last][i]=temp;
+             
             
            }
            printMatrix(arr);
        }
- 
 
 }
