@@ -24,7 +24,7 @@ public class Rmatrix {
     static void printMatrix(int arr[][]) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
-                System.out.print(arr[i][j] + " ");
+                System.out.print(arr[i][j] + "  ");
             }
             System.out.println("");
 
@@ -52,33 +52,33 @@ public class Rmatrix {
        public static void rotate(int [][] arr){
            int last = arr.length-1;
     int level=0;     
-           for(int i=0; i<last; i++){
-
+           for(int j=0; j<last; j++){
+               for(int i=j; i<last; i++){
                int temp = arr[level][i];
                arr[level][i] = arr[i][last];
                arr[i][last] = arr[last][last-i];
                arr[last][last-i]= arr[last-i][level];
                arr[last-i][level]=temp;
-             
-            
-           }
-//           printMatrix(arr);
-       }
-  public static void rotateInner(int [][] arr){
-           int last = arr.length-2;
-           int level=0;     
-          rotate(arr);
-           for(int i=1; i<last; i++){
-
-               int temp = arr[i][i];
-               arr[i][i] = arr[i][last];
-               arr[i][last] = arr[last][last];
-               arr[last][last]= arr[last][i];
-               arr[last][i]=temp;
-             
-            
+               }
+               last--;
+               level++;
            }
            printMatrix(arr);
        }
+//  public static void rotateInner(int [][] arr){
+//           int last = arr.length-2;
+//           int level=0;     
+//          rotate(arr);
+//           for(int i=1; i<last; i++){
+//
+//               int temp = arr[i][i];
+//               arr[i][i] = arr[i][last];
+//               arr[i][last] = arr[last][last];
+//               arr[last][last]= arr[last][i];
+//               arr[last][i]=temp;
+
+//           }
+//           printMatrix(arr);
+//       }
 
 }
