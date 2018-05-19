@@ -34,12 +34,13 @@ public class CodingInterview {
 //        StringCompression sc= new StringCompression();
 //        sc.compresed("aaabbbaac");
 
-    Rmatrix rm = new Rmatrix(); 
-   		int matrix[][] = new int[][] { {1,2,3,4},
-                    {5,6,7,8},{9,10,11,12},{13,14,15,16}};
-		rm.rotate(matrix);
+//    Rmatrix rm = new Rmatrix(); 
+   int matrix[][] = new int[][] {{0,0,1},{2,3,4}};
+//                rm.printMatrix(matrix);
+//		rm.rotate(matrix);
 //                rm.rotateInner(matrix);
- 
+    Zmatrix zm =new Zmatrix();
+    zm.printMatrix(matrix);
     }
 }
 
