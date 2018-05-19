@@ -43,7 +43,7 @@ public class CodingInterview {
 //    zm.printMatrix(matrix);
    
     StringRotation sr= new StringRotation();
-    sr.isRotation("waterbottle","ewaterbottl");
+    sr.isRotation("waterbottle","lewaterbott");
     }
 }
 

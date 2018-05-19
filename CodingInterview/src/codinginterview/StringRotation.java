@@ -21,13 +21,13 @@ public class StringRotation {
        return false;
     }
     }
-       public boolean isRotation(String s1, String s2){
-       
-       int len = s1.length();
-       if(len ==s2.length() &&len>0){
-       String s1s2 = s1+s2;
-           System.out.println(s1s2);
-       return isSubstring(s1s2, s2);
+       public boolean isRotation(String str1, String str2){
+       //waterbottlewaterbottle98 --- ewaterbottl
+       int len = str1.length();
+       if(len ==str2.length() &&len>0){
+       String s = str1+str1;
+           System.out.println(s);
+       return isSubstring(s, str2);
        }
            System.err.println("error counts");
        return false;

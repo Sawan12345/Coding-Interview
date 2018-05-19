@@ -16,6 +16,8 @@ public class Zmatrix {
     
 //    0 0
 //    2 0
+    
+    //iterate array and look for zero element
     static void printMatrix(int arr[][]) {
         
         int M=arr.length;
@@ -27,6 +29,7 @@ public class Zmatrix {
             if (arr[i][j] == 0) {
                 row[i] = true;
                 col[j] = true;
+                //store i and j for next step
             }
         }
     }
