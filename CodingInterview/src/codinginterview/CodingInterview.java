@@ -35,12 +35,15 @@ public class CodingInterview {
 //        sc.compresed("aaabbbaac");
 
 //    Rmatrix rm = new Rmatrix(); 
-   int matrix[][] = new int[][] {{0,0,1},{2,3,4}};
+   int matrix[][] = new int[][] {{0,0,1,2},{2,3,4,5}};
 //                rm.printMatrix(matrix);
 //		rm.rotate(matrix);
 //                rm.rotateInner(matrix);
-    Zmatrix zm =new Zmatrix();
-    zm.printMatrix(matrix);
+//    Zmatrix zm =new Zmatrix();
+//    zm.printMatrix(matrix);
+   
+    StringRotation sr= new StringRotation();
+    sr.isRotation("waterbottle","ewaterbottl");
     }
 }
 
