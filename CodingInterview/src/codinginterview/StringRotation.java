@@ -24,7 +24,7 @@ public class StringRotation {
        public boolean isRotation(String str1, String str2){
        //waterbottlewaterbottle98 --- ewaterbottl
        int len = str1.length();
-       if(len ==str2.length() &&len>0){
+       if(len == str2.length() && len>0){
        String s = str1+str1;
            System.out.println(s);
        return isSubstring(s, str2);

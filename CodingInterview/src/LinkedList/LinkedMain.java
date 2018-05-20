@@ -4,39 +4,39 @@
  * and open the template in the editor.
  */
 package LinkedList;
-
+import java.util.LinkedList;
 /**
  *
  * @author Komal
  */
 public class LinkedMain {
 
-    Node head;
-    int count=0;
-    
-//    public LinkedMain(){
-//    head =null;
-//    count=0;
-//    }
-    
-    public LinkedMain(Node newHead){
-    head =newHead;
-    count=1;
-    }
-    
-    //add a node
-    public void add(int newData){
-    Node temp = new Node(newData);
-    Node current = head;
-    
-    while(current.getNext() != null){
-    current = current.getNext();
-    }
-    current.setNext(temp);
-    }
-    
     
     public static void main(String[] args){
-
+        LinkedList<String> lm = new LinkedList<>();
+        lm.addFirst("komal");
+        lm.add("jay");
+        lm.add("komal");
+        
+         
+        Node n =new Node(12);
+        n.appenTotail(16);
+        n.appenTotail(12);
+        n.appenTotail(13);
+        n.appenTotail(4);
+        n.appenTotail(13);
+        n.appenTotail(11);
+        System.out.println("Before deletion");
+        n.printnode();
+//        n.deleteNode(n.next, 11);
+        System.out.println("after deletion");
+        n.duplicate();
+        n.printnode();
+//        System.out.println(n.data);
+//        System.out.println(n.next.data);
+//        System.out.println(n.next.next.data);
+       
+        
+//        System.out.println(lm);
  }   
 }

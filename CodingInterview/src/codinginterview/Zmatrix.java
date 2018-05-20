@@ -22,6 +22,8 @@ public class Zmatrix {
         
         int M=arr.length;
         int N=arr[0].length;
+        
+        //this is additional
     boolean[] row = new boolean[M];
     boolean[] col = new boolean[N];
     for (int i = 0; i < M; i++) {
@@ -29,11 +31,13 @@ public class Zmatrix {
             if (arr[i][j] == 0) {
                 row[i] = true;
                 col[j] = true;
+                
                 //store i and j for next step
             }
         }
     }
     for (int i = 0; i < M; i++) {
+        //use Strored i if its true than make it constant change jth row    [00][01][02]will be zero
         if (row[i]) { 
             for (int j = 0; j < N; j++) {
                 arr[i][j] = 0;
@@ -41,6 +45,7 @@ public class Zmatrix {
         }
     }
     for (int j = 0; j < N; j++) {
+        //use Strored j if its true than make it constant change ith row    [00][10][20]will be zero
         if (col[j]) {
             for (int i = 0; i < M; i++) {
                 arr[i][j] = 0;

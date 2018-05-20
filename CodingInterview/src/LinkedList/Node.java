@@ -14,22 +14,7 @@ public class Node {
     Node next =null;
     int data;
 
-    public Node getNext() {
-        return next;
-    }
 
-    public void setNext(Node next) {
-        this.next = next;
-    }
-
-    public int getData() {
-        return data;
-    }
-
-    public void setData(int data) {
-        this.data = data;
-    }
-    
     public Node(int newData){
     data = newData;
     next= null;
@@ -39,12 +24,49 @@ public class Node {
       next=newNext;
     }
     
-//    public void appenTotail(int d){
-//    Node end =new Node(d);
-//    Node n =this;
-//    while(n.next != null){
-//        n=n.next;
-//    }
-//    n.next=end;
-//    }
+    public void printnode(){
+    Node n = next;
+    while(n !=null){
+        System.out.print(n.data+" ");
+        n=n.next;
+    }
+    }
+    
+    
+    //trying to implement print(iteration) and delete
+    public void duplicate(){
+    Node n = next;
+    while(n.data == n.next.data){
+        System.out.print(n.data+" ");
+        System.out.println("dups");
+        n=n.next;
+        }
+    }
+    
+    
+    Node deleteNode(Node head, int d){
+        Node n =head;
+        if(n.data == d){
+        return head.next;
+        }
+        while(n.next !=null){
+        if(n.next.data==d){
+        n.next =n.next.next;
+        return head;
+        }
+        n=n.next;
+        }
+    return head;
+    }
+    
+   
+    
+    public void appenTotail(int d){
+    Node end =new Node(d);
+    Node n =this;
+    while(n.next != null){
+        n=n.next;
+    }
+    n.next=end;
+    }
 }
