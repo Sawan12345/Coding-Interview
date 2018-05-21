@@ -30,8 +30,10 @@ public class LinkedMain {
         n.printnode();
 //        n.deleteNode(n.next, 11);
         System.out.println("after deletion");
-        n.duplicate();
+        n.removeDuplicate(n);
+        System.out.println("duplicate err");
         n.printnode();
+        n.getCount();
 //        System.out.println(n.data);
 //        System.out.println(n.next.data);
 //        System.out.println(n.next.next.data);
